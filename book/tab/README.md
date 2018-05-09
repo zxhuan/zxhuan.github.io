@@ -1,5 +1,5 @@
 # tab
-```
+```html
 <template>
   <div class="tab">
     <zx-tab v-model='active'>

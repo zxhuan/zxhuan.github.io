@@ -1,5 +1,5 @@
 # switch
-```
+```html
 <template>
   <div class="switch">
     <div class="box" style="margin-bottom: 10px;">

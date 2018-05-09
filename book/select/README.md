@@ -1,5 +1,5 @@
 # select
-```
+```html
 <template>
   <div class="select">
     <zx-form-group>

@@ -1,5 +1,5 @@
 # input
-```
+``` html
 <template>
   <div class="input">
     <zx-form-group>

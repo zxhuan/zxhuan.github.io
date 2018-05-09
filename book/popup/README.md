@@ -1,5 +1,5 @@
 # popup
-```
+```html
 <template>
   <div class="popup">
     <zx-button @click="popupFn('left','40%','40%')">左边弹出</zx-button>

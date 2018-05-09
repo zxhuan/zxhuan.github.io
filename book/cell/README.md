@@ -1,5 +1,5 @@
 # cell
-```
+```html
 <template>
   <div class="cell">
     <zx-cell-group title="有标题">

@@ -1,5 +1,5 @@
 # checkbox
-```
+```html
 <template>
     <div class="checkbox">
         <zx-form-group title="checkox选项">

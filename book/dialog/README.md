@@ -1,5 +1,5 @@
 # dialog
-```
+```html
 <template>
   <div class="dialog" style="padding-top: 10px">
     <h2>toast</h2>

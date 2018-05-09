@@ -1,5 +1,5 @@
 # radio
-```
+```html
 <template>
   <div class="radio">
     <zx-form-group title="radio选项">

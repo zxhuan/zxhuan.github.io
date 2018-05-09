@@ -1,4 +1,5 @@
-```
+# button
+```html
 <template>
   <div class="button">
     <zx-button type='primary'>primary</zx-button>
