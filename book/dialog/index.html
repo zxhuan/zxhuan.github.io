@@ -1,0 +1,457 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>dialog · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../popup/" />
+    
+    
+    <link rel="prev" href="../checkbox/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../install/">
+            
+                <a href="../install/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../button/">
+            
+                <a href="../button/">
+            
+                    
+                    button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../input/">
+            
+                <a href="../input/">
+            
+                    
+                    input
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../cell/">
+            
+                <a href="../cell/">
+            
+                    
+                    cell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../checkbox/">
+            
+                <a href="../checkbox/">
+            
+                    
+                    checkbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../popup/">
+            
+                <a href="../popup/">
+            
+                    
+                    popup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../radio/">
+            
+                <a href="../radio/">
+            
+                    
+                    radio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../select/">
+            
+                <a href="../select/">
+            
+                    
+                    select
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../switch/">
+            
+                <a href="../switch/">
+            
+                    
+                    switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../tab/">
+            
+                <a href="../tab/">
+            
+                    
+                    tab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >dialog</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dialog">dialog</h1>
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;dialog&quot; style=&quot;padding-top: 10px&quot;&gt;
+    &lt;h2&gt;toast&lt;/h2&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;bottom&apos;)&quot;&gt;toast[&apos;bottom&apos;]&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;top&apos;)&quot;&gt;toast[&apos;top&apos;]&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;center&apos;)&quot;&gt;toast[&apos;center&apos;]&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;top&apos;,5000)&quot;&gt;5s&#x540E;&#x79FB;&#x9664;&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;removeFn&quot;&gt;&#x5F39;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x9664;&lt;/zx-button&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;alert&lt;/h2&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;alertFn&quot;&gt;alert&lt;/zx-button&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;confirm&lt;/h2&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;confirmFn&quot;&gt;confirm&lt;/zx-button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    data() {
+      return {
+        moveBool: false
+      };
+    },
+    methods: {
+      removeFn() {
+        this.$dialog.toast({
+          msg: &apos;&#x5F39;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x9664;&apos;,
+          remove: false // &#x9ED8;&#x8BA4;&#x4E3A;true&#x3010;&#x79FB;&#x9664;&#x3011;&#xFF0C;false[&#x4E0D;&#x79FB;&#x9664;]
+        });
+      },
+      toastFn(direction, duration) {
+        this.$dialog.toast({
+          msg: direction,
+          position: direction,
+          time: duration ? duration : &apos;&apos;, // &#x65F6;&#x95F4;&#x95F4;&#x9694;
+          onOk: () =&gt; {
+            console.log(&apos;hello world!&apos;);
+          }
+        });
+      },
+      alertFn() {
+        this.$dialog.alert({
+          msg: &apos;&#x5F39;&#x5C42;&#x4FE1;&#x606F;&apos;,
+          onOk: () =&gt; {
+            console.log(&apos;alertFn callback&apos;);
+          }
+        });
+      },
+      confirmFn() {
+        this.$dialog.Confirm({
+          title: &apos;&#x6E29;&#x99A8;&#x63D0;&#x793A;&apos;,
+          msg: &apos;&#x6B64;&#x64CD;&#x4F5C;&#x5C06;&#x5220;&#x9664;&#x8BE5;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x662F;&#x5426;&#x7EE7;&#x7EED;&apos;,
+          onOk: () =&gt; {
+            this.$dialog.toast({
+              msg: &apos;&#x5220;&#x9664;&#x6210;&#x529F;&apos;
+            });
+          },
+          cancel: () =&gt; {
+            this.$dialog.toast({
+              msg: &apos;&#x53D6;&#x6D88;&#x5220;&#x9664;&apos;
+            });
+          }
+        });
+      }
+    }
+  };
+&lt;/script&gt;
+&lt;style scoped&gt;
+  .flex {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .flex .zx-button {
+    margin-bottom: 10px;
+  }
+&lt;/style&gt;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../checkbox/" class="navigation navigation-prev " aria-label="Previous page: checkbox">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../popup/" class="navigation navigation-next " aria-label="Next page: popup">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"dialog","level":"1.7","depth":1,"next":{"title":"popup","level":"1.8","depth":1,"path":"popup/README.md","ref":"popup/README.md","articles":[]},"previous":{"title":"checkbox","level":"1.6","depth":1,"path":"checkbox/README.md","ref":"checkbox/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dialog/README.md","mtime":"2018-05-09T06:11:51.490Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:27:29.371Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
