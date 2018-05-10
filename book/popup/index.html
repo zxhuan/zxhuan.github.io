@@ -291,44 +291,45 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="popup">popup</h1>
-<pre><code>&lt;template&gt;
-  &lt;div class=&quot;popup&quot;&gt;
-    &lt;zx-button @click=&quot;popupFn(&apos;left&apos;,&apos;40%&apos;,&apos;40%&apos;)&quot;&gt;&#x5DE6;&#x8FB9;&#x5F39;&#x51FA;&lt;/zx-button&gt;
-    &lt;hr&gt;
-    &lt;zx-button @click=&quot;popupFn(&apos;right&apos;)&quot;&gt;&#x53F3;&#x8FB9;&#x5F39;&#x51FA;&lt;/zx-button&gt;
-    &lt;hr&gt;
-    &lt;zx-button @click=&quot;popupFn(&apos;bottom&apos;)&quot;&gt;&#x5E95;&#x90E8;&#x5F39;&#x51FA;&lt;/zx-button&gt;
-    &lt;hr&gt;
-    &lt;zx-button @click=&quot;popupFn(&apos;top&apos;)&quot;&gt;&#x9876;&#x90E8;&#x5F39;&#x51FA;&lt;/zx-button&gt;
-    &lt;zx-popup v-model=&quot;showBool&quot; :position=&quot;direction&quot; :width=&quot;w&quot; :height=&quot;h&quot; @close=&quot;closeMask&quot;&gt;
-      &lt;zx-button type=&quot;warning&quot; @click=&quot;showBool=!showBool&quot; style=&quot;margin:10px;&quot;&gt;&#x70B9;&#x6211;&#x5173;&#x95ED;&#x56FE;&#x5C42;&lt;/zx-button&gt;
-    &lt;/zx-popup&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popup&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;popupFn(&apos;left&apos;,&apos;40%&apos;,&apos;40%&apos;)&quot;</span>&gt;</span>&#x5DE6;&#x8FB9;&#x5F39;&#x51FA;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;popupFn(&apos;right&apos;)&quot;</span>&gt;</span>&#x53F3;&#x8FB9;&#x5F39;&#x51FA;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;popupFn(&apos;bottom&apos;)&quot;</span>&gt;</span>&#x5E95;&#x90E8;&#x5F39;&#x51FA;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;popupFn(&apos;top&apos;)&quot;</span>&gt;</span>&#x9876;&#x90E8;&#x5F39;&#x51FA;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zx-popup</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;showBool&quot;</span> <span class="hljs-attr">:position</span>=<span class="hljs-string">&quot;direction&quot;</span> <span class="hljs-attr">:width</span>=<span class="hljs-string">&quot;w&quot;</span> <span class="hljs-attr">:height</span>=<span class="hljs-string">&quot;h&quot;</span> @<span class="hljs-attr">close</span>=<span class="hljs-string">&quot;closeMask&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;warning&quot;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;showBool=!showBool&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;margin:10px;&quot;</span>&gt;</span>&#x70B9;&#x6211;&#x5173;&#x95ED;&#x56FE;&#x5C42;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-popup</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     data() {
-      return {
-        showBool: false,
-        direction: &apos;right&apos;,
-        h: &apos;60%&apos;,
-        w: &apos;60%&apos;
+      <span class="hljs-keyword">return</span> {
+        showBool: <span class="hljs-literal">false</span>,
+        direction: <span class="hljs-string">&apos;right&apos;</span>,
+        h: <span class="hljs-string">&apos;60%&apos;</span>,
+        w: <span class="hljs-string">&apos;60%&apos;</span>
       };
     },
     methods: {
       popupFn(direction, h, w) {
-        this.showBool = true;
-        this.direction = direction;
-        this.h = h ? h : &apos;60%&apos;;
-        this.w = w ? w : &apos;60%&apos;;
+        <span class="hljs-keyword">this</span>.showBool = <span class="hljs-literal">true</span>;
+        <span class="hljs-keyword">this</span>.direction = direction;
+        <span class="hljs-keyword">this</span>.h = h ? h : <span class="hljs-string">&apos;60%&apos;</span>;
+        <span class="hljs-keyword">this</span>.w = w ? w : <span class="hljs-string">&apos;60%&apos;</span>;
       },
       closeMask() {
-        console.log(&apos;&#x5173;&#x95ED;&#x56FE;&#x5C42;&apos;);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5173;&#x95ED;&#x56FE;&#x5C42;&apos;</span>);
       }
     }
   };
-&lt;/script&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
+
                                 
                                 </section>
                             
@@ -371,7 +372,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"popup","level":"1.8","depth":1,"next":{"title":"radio","level":"1.9","depth":1,"path":"radio/README.md","ref":"radio/README.md","articles":[]},"previous":{"title":"dialog","level":"1.7","depth":1,"path":"dialog/README.md","ref":"dialog/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"popup/README.md","mtime":"2018-05-09T06:12:19.498Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:27:29.371Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"popup","level":"1.8","depth":1,"next":{"title":"radio","level":"1.9","depth":1,"path":"radio/README.md","ref":"radio/README.md","articles":[]},"previous":{"title":"dialog","level":"1.7","depth":1,"path":"dialog/README.md","ref":"dialog/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"popup/README.md","mtime":"2018-05-09T06:44:00.081Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:45:13.861Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

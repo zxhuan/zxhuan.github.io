@@ -291,149 +291,148 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="input">input</h1>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;input&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;inputValue&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x59D3;&#x540D;&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x7528;&#x6237;&#x540D;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;inputValue&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x7528;&#x6237;&#x540D;&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x7528;&#x6237;&#x540D;+&#x56FE;&#x6807;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;inputValue&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x7528;&#x6237;&#x540D;&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon&quot;</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&apos;icon&apos;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x624B;&#x673A;&#x53F7;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.mobile&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x624B;&#x673A;&#x53F7;&apos;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;mobile&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.mobile&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;number&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x9A8C;&#x8BC1;&#x7801;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.code&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x9A8C;&#x8BC1;&#x7801;&apos;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;code&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.code&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;number&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&apos;text&apos;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&apos;input-text&apos;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&apos;getCode(&quot;mobile&quot;,&quot;&#x9A8C;&#x8BC1;&#x7801;&quot;,$event)&apos;</span>&gt;</span>&#x9A8C;&#x8BC1;&#x7801;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x90AE;&#x7BB1;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.email&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x90AE;&#x7BB1;&apos;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;email&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.email&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x94F6;&#x884C;&#x5361;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.bankcard&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x94F6;&#x884C;&#x5361;&apos;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;bankcard&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.bankcard&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x8EAB;&#x4EFD;&#x8BC1;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.identity&apos;</span> <span class="hljs-attr">place</span>=<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&apos;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;identity&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.identity&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-input</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x6027;&#x522B;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-group</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.sex&apos;</span> <span class="hljs-attr">flex</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;sex&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.sex&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>&#x7537;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>&#x5973;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&apos;&#x5174;&#x8DA3;&apos;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-checkbox-group</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&apos;subForm.interest&apos;</span> <span class="hljs-attr">flex</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&apos;interest&apos;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&apos;rules.interest&apos;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-checkbox-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>&#x8BFB;&#x4E66;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-checkbox-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-checkbox-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>&#x5199;&#x5B57;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-checkbox-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-checkbox-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>&#x722C;&#x5C71;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-checkbox-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-checkbox-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>&#x4E66;&#x6CD5;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-checkbox-item</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-checkbox-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;primary&apos;</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&apos;submitFunc(&quot;subForm&quot;)&apos;</span>&gt;</span>&#x8868;&#x5355;&#x63D0;&#x4EA4;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  <span class="hljs-comment">// tell</span>
-  <span class="hljs-comment">// email</span>
-  <span class="hljs-comment">// bankcard // &#x94F6;&#x884C;&#x5361;</span>
-  <span class="hljs-comment">// identity // &#x8EAB;&#x4EFD;&#x8BC1;</span>
-  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;input&quot;&gt;
+    &lt;zx-form-group&gt;
+      &lt;zx-input v-model=&apos;inputValue&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x59D3;&#x540D;&apos;&gt;&lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x7528;&#x6237;&#x540D;&apos;&gt;
+      &lt;zx-input v-model=&apos;inputValue&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x7528;&#x6237;&#x540D;&apos;&gt;&lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x7528;&#x6237;&#x540D;+&#x56FE;&#x6807;&apos;&gt;
+      &lt;zx-input v-model=&apos;inputValue&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x7528;&#x6237;&#x540D;&apos;&gt;
+        &lt;i class=&quot;icon&quot; slot=&apos;icon&apos;&gt;&lt;/i&gt;
+      &lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;hr&gt;
+    &lt;zx-form-group title=&apos;&#x624B;&#x673A;&#x53F7;&apos;&gt;
+      &lt;zx-input v-model=&apos;subForm.mobile&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x624B;&#x673A;&#x53F7;&apos; ref=&apos;mobile&apos; :rules=&apos;rules.mobile&apos; type=&apos;number&apos;&gt;
+      &lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x9A8C;&#x8BC1;&#x7801;&apos;&gt;
+      &lt;zx-input v-model=&apos;subForm.code&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x9A8C;&#x8BC1;&#x7801;&apos; ref=&apos;code&apos; :rules=&apos;rules.code&apos; type=&apos;number&apos;&gt;
+        &lt;span slot=&apos;text&apos; class=&apos;input-text&apos; @click=&apos;getCode(&quot;mobile&quot;,&quot;&#x9A8C;&#x8BC1;&#x7801;&quot;,$event)&apos;&gt;&#x9A8C;&#x8BC1;&#x7801;&lt;/span&gt;
+      &lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x90AE;&#x7BB1;&apos;&gt;
+      &lt;zx-input v-model=&apos;subForm.email&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x90AE;&#x7BB1;&apos; ref=&apos;email&apos; :rules=&apos;rules.email&apos;&gt;
+      &lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x94F6;&#x884C;&#x5361;&apos;&gt;
+      &lt;zx-input v-model=&apos;subForm.bankcard&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x94F6;&#x884C;&#x5361;&apos; ref=&apos;bankcard&apos; :rules=&apos;rules.bankcard&apos;&gt;
+      &lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x8EAB;&#x4EFD;&#x8BC1;&apos;&gt;
+      &lt;zx-input v-model=&apos;subForm.identity&apos; place=&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&apos; ref=&apos;identity&apos; :rules=&apos;rules.identity&apos;&gt;
+      &lt;/zx-input&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x6027;&#x522B;&apos;&gt;
+      &lt;zx-radio-group v-model=&apos;subForm.sex&apos; flex ref=&apos;sex&apos; :rules=&apos;rules.sex&apos;&gt;
+        &lt;zx-radio-item value=&quot;1&quot;&gt;&#x7537;&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;2&quot;&gt;&#x5973;&lt;/zx-radio-item&gt;
+      &lt;/zx-radio-group&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group title=&apos;&#x5174;&#x8DA3;&apos;&gt;
+      &lt;zx-checkbox-group v-model=&apos;subForm.interest&apos; flex ref=&apos;interest&apos; :rules=&apos;rules.interest&apos;&gt;
+        &lt;zx-checkbox-item value=&quot;1&quot;&gt;&#x8BFB;&#x4E66;&lt;/zx-checkbox-item&gt;
+        &lt;zx-checkbox-item value=&quot;2&quot;&gt;&#x5199;&#x5B57;&lt;/zx-checkbox-item&gt;
+        &lt;zx-checkbox-item value=&quot;3&quot;&gt;&#x722C;&#x5C71;&lt;/zx-checkbox-item&gt;
+        &lt;zx-checkbox-item value=&quot;3&quot;&gt;&#x4E66;&#x6CD5;&lt;/zx-checkbox-item&gt;
+      &lt;/zx-checkbox-group&gt;
+    &lt;/zx-form-group&gt;
+    &lt;zx-form-group&gt;
+      &lt;zx-button type=&apos;primary&apos; @click=&apos;submitFunc(&quot;subForm&quot;)&apos;&gt;&#x8868;&#x5355;&#x63D0;&#x4EA4;&lt;/zx-button&gt;
+    &lt;/zx-form-group&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  // tell
+  // email
+  // bankcard // &#x94F6;&#x884C;&#x5361;
+  // identity // &#x8EAB;&#x4EFD;&#x8BC1;
+  export default {
     data() {
-      <span class="hljs-keyword">return</span> {
-        inputValue: <span class="hljs-string">&apos;&apos;</span>,
-        username: <span class="hljs-string">&apos;&apos;</span>,
-        bool: <span class="hljs-literal">false</span>,
+      return {
+        inputValue: &apos;&apos;,
+        username: &apos;&apos;,
+        bool: false,
         subForm: {
-          mobile: <span class="hljs-string">&apos;&apos;</span>,
-          code: <span class="hljs-string">&apos;&apos;</span>,
-          email: <span class="hljs-string">&apos;&apos;</span>,
-          bankcard: <span class="hljs-string">&apos;&apos;</span>,
-          identity: <span class="hljs-string">&apos;&apos;</span>,
-          sex: <span class="hljs-string">&apos;&apos;</span>,
+          mobile: &apos;&apos;,
+          code: &apos;&apos;,
+          email: &apos;&apos;,
+          bankcard: &apos;&apos;,
+          identity: &apos;&apos;,
+          sex: &apos;&apos;,
           interest: []
         },
         rules: {
-          mobile: { required: <span class="hljs-literal">true</span>, pattern: <span class="hljs-string">&apos;tell&apos;</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x6B63;&#x786E;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x624B;&#x673A;&#x53F7;&#x7801;&apos;</span> },
-          code: { required: <span class="hljs-literal">true</span>, pattern: <span class="hljs-string">&apos;^\\d{6}$&apos;</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;6&#x4F4D;&#x6570;&#x9A8C;&#x8BC1;&#x7801;&apos;</span> },
-          email: { required: <span class="hljs-literal">true</span>, pattern: <span class="hljs-string">&apos;email&apos;</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x90AE;&#x7BB1;&apos;</span> },
-          bankcard: { required: <span class="hljs-literal">true</span>, pattern: <span class="hljs-string">&apos;bankcard&apos;</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x94F6;&#x884C;&#x5361;&apos;</span> },
-          identity: { required: <span class="hljs-literal">true</span>, pattern: <span class="hljs-string">&apos;identity&apos;</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&apos;</span> },
-          sex: { required: <span class="hljs-literal">true</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;&#x6027;&#x522B;&apos;</span> },
-          interest: { required: <span class="hljs-literal">true</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;&#x5174;&#x8DA3;&#x7231;&#x597D;&apos;</span> }
+          mobile: { required: true, pattern: &apos;tell&apos;, msg: &apos;&#x8BF7;&#x6B63;&#x786E;&#x8F93;&#x5165;&#x60A8;&#x7684;&#x624B;&#x673A;&#x53F7;&#x7801;&apos; },
+          code: { required: true, pattern: &apos;^\\d{6}$&apos;, msg: &apos;&#x8BF7;&#x8F93;&#x5165;&#x60A8;&#x7684;6&#x4F4D;&#x6570;&#x9A8C;&#x8BC1;&#x7801;&apos; },
+          email: { required: true, pattern: &apos;email&apos;, msg: &apos;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x90AE;&#x7BB1;&apos; },
+          bankcard: { required: true, pattern: &apos;bankcard&apos;, msg: &apos;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x94F6;&#x884C;&#x5361;&apos; },
+          identity: { required: true, pattern: &apos;identity&apos;, msg: &apos;&#x8BF7;&#x8F93;&#x5165;&#x6B63;&#x786E;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&apos; },
+          sex: { required: true, msg: &apos;&#x8BF7;&#x9009;&#x62E9;&#x6027;&#x522B;&apos; },
+          interest: { required: true, msg: &apos;&#x8BF7;&#x9009;&#x62E9;&#x5174;&#x8DA3;&#x7231;&#x597D;&apos; }
         }
       };
     },
     methods: {
-      <span class="hljs-comment">// &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;</span>
+      // &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;
       getCode(item, innerText, $event) {
-        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.checkItem(item)) {
-          <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        if (!this.checkItem(item)) {
+          return false;
         }
-        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.bool) { <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>; }
-        <span class="hljs-keyword">this</span>.bool = <span class="hljs-literal">true</span>;
-        <span class="hljs-keyword">let</span> num = <span class="hljs-number">10</span>;
-        <span class="hljs-keyword">this</span>.subForm.code = <span class="hljs-number">263563</span>;
-        <span class="hljs-keyword">this</span>.timer = setInterval(() =&gt; {
+        if (this.bool) { return false; }
+        this.bool = true;
+        let num = 10;
+        this.subForm.code = 263563;
+        this.timer = setInterval(() =&gt; {
           num--;
-          $event.target.innerText = num + <span class="hljs-string">&apos;s&apos;</span>;
-          <span class="hljs-keyword">if</span> (num &lt;= <span class="hljs-number">0</span>) {
-            clearTimeout(<span class="hljs-keyword">this</span>.timer);
+          $event.target.innerText = num + &apos;s&apos;;
+          if (num &lt;= 0) {
+            clearTimeout(this.timer);
             $event.target.innerText = innerText;
-            <span class="hljs-comment">// this.subForm.code = &apos;&apos;;</span>
-            <span class="hljs-keyword">this</span>.bool = <span class="hljs-literal">false</span>;
+            // this.subForm.code = &apos;&apos;;
+            this.bool = false;
           }
-        }, <span class="hljs-number">1000</span>);
+        }, 1000);
       },
       checkItem(item) {
-        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.$refs[item].valid) {
-          <span class="hljs-keyword">this</span>.$dialog.toast({
-            msg: <span class="hljs-keyword">this</span>.$refs[item].msg,
-            position: <span class="hljs-string">&apos;top&apos;</span>
+        if (!this.$refs[item].valid) {
+          this.$dialog.toast({
+            msg: this.$refs[item].msg,
+            position: &apos;top&apos;
           });
-          <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+          return false;
         }
-        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+        return true;
       },
-      <span class="hljs-comment">// &#x63D0;&#x4EA4;</span>
+      // &#x63D0;&#x4EA4;
       submitFunc(formName) {
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">in</span> <span class="hljs-keyword">this</span>[formName]) {
-          <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.checkItem(item)) {
-            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+        for (let item in this[formName]) {
+          if (!this.checkItem(item)) {
+            return false;
           }
         };
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>[formName]);
-        <span class="hljs-keyword">this</span>.$dialog.toast({
-          msg: <span class="hljs-string">&apos;&#x8BF7;&#x6253;&#x5F00;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;&#x503C;&apos;</span>,
-          position: <span class="hljs-string">&apos;top&apos;</span>
+        console.log(this[formName]);
+        this.$dialog.toast({
+          msg: &apos;&#x8BF7;&#x6253;&#x5F00;&#x63A7;&#x5236;&#x53F0;&#x67E5;&#x770B;&#x503C;&apos;,
+          position: &apos;top&apos;
         });
       }
     }
   };
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
-  <span class="hljs-selector-class">.icon</span> {
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&quot;../assets/logo.png&quot;</span>) no-repeat center center;
-    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">80%</span>;
+&lt;/script&gt;
+&lt;style scoped&gt;
+  .icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: url(&quot;../assets/logo.png&quot;) no-repeat center center;
+    background-size: 80%;
   }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+&lt;/style&gt;
 </code></pre>
-
                                 
                                 </section>
                             
@@ -476,7 +475,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"input","level":"1.4","depth":1,"next":{"title":"cell","level":"1.5","depth":1,"path":"cell/README.md","ref":"cell/README.md","articles":[]},"previous":{"title":"button","level":"1.3","depth":1,"path":"button/README.md","ref":"button/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"input/README.md","mtime":"2018-05-09T06:43:54.448Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:45:13.861Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"input","level":"1.4","depth":1,"next":{"title":"cell","level":"1.5","depth":1,"path":"cell/README.md","ref":"cell/README.md","articles":[]},"previous":{"title":"button","level":"1.3","depth":1,"path":"button/README.md","ref":"button/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"input/README.md","mtime":"2018-05-09T06:12:04.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:27:29.371Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -291,92 +291,91 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="dialog">dialog</h1>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dialog&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;padding-top: 10px&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>toast<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;toastFn(&apos;bottom&apos;)&quot;</span>&gt;</span>toast[&apos;bottom&apos;]<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;toastFn(&apos;top&apos;)&quot;</span>&gt;</span>toast[&apos;top&apos;]<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;toastFn(&apos;center&apos;)&quot;</span>&gt;</span>toast[&apos;center&apos;]<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;toastFn(&apos;top&apos;,5000)&quot;</span>&gt;</span>5s&#x540E;&#x79FB;&#x9664;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;removeFn&quot;</span>&gt;</span>&#x5F39;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x9664;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>alert<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;alertFn&quot;</span>&gt;</span>alert<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>confirm<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;confirmFn&quot;</span>&gt;</span>confirm<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;dialog&quot; style=&quot;padding-top: 10px&quot;&gt;
+    &lt;h2&gt;toast&lt;/h2&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;bottom&apos;)&quot;&gt;toast[&apos;bottom&apos;]&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;top&apos;)&quot;&gt;toast[&apos;top&apos;]&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;center&apos;)&quot;&gt;toast[&apos;center&apos;]&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;toastFn(&apos;top&apos;,5000)&quot;&gt;5s&#x540E;&#x79FB;&#x9664;&lt;/zx-button&gt;
+      &lt;zx-button @click=&quot;removeFn&quot;&gt;&#x5F39;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x9664;&lt;/zx-button&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;alert&lt;/h2&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;alertFn&quot;&gt;alert&lt;/zx-button&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;confirm&lt;/h2&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;confirmFn&quot;&gt;confirm&lt;/zx-button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
     data() {
-      <span class="hljs-keyword">return</span> {
-        moveBool: <span class="hljs-literal">false</span>
+      return {
+        moveBool: false
       };
     },
     methods: {
       removeFn() {
-        <span class="hljs-keyword">this</span>.$dialog.toast({
-          msg: <span class="hljs-string">&apos;&#x5F39;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x9664;&apos;</span>,
-          remove: <span class="hljs-literal">false</span> <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x4E3A;true&#x3010;&#x79FB;&#x9664;&#x3011;&#xFF0C;false[&#x4E0D;&#x79FB;&#x9664;]</span>
+        this.$dialog.toast({
+          msg: &apos;&#x5F39;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x79FB;&#x9664;&apos;,
+          remove: false // &#x9ED8;&#x8BA4;&#x4E3A;true&#x3010;&#x79FB;&#x9664;&#x3011;&#xFF0C;false[&#x4E0D;&#x79FB;&#x9664;]
         });
       },
       toastFn(direction, duration) {
-        <span class="hljs-keyword">this</span>.$dialog.toast({
+        this.$dialog.toast({
           msg: direction,
           position: direction,
-          time: duration ? duration : <span class="hljs-string">&apos;&apos;</span>, <span class="hljs-comment">// &#x65F6;&#x95F4;&#x95F4;&#x9694;</span>
+          time: duration ? duration : &apos;&apos;, // &#x65F6;&#x95F4;&#x95F4;&#x9694;
           onOk: () =&gt; {
-            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello world!&apos;</span>);
+            console.log(&apos;hello world!&apos;);
           }
         });
       },
       alertFn() {
-        <span class="hljs-keyword">this</span>.$dialog.alert({
-          msg: <span class="hljs-string">&apos;&#x5F39;&#x5C42;&#x4FE1;&#x606F;&apos;</span>,
+        this.$dialog.alert({
+          msg: &apos;&#x5F39;&#x5C42;&#x4FE1;&#x606F;&apos;,
           onOk: () =&gt; {
-            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;alertFn callback&apos;</span>);
+            console.log(&apos;alertFn callback&apos;);
           }
         });
       },
       confirmFn() {
-        <span class="hljs-keyword">this</span>.$dialog.Confirm({
-          title: <span class="hljs-string">&apos;&#x6E29;&#x99A8;&#x63D0;&#x793A;&apos;</span>,
-          msg: <span class="hljs-string">&apos;&#x6B64;&#x64CD;&#x4F5C;&#x5C06;&#x5220;&#x9664;&#x8BE5;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x662F;&#x5426;&#x7EE7;&#x7EED;&apos;</span>,
+        this.$dialog.Confirm({
+          title: &apos;&#x6E29;&#x99A8;&#x63D0;&#x793A;&apos;,
+          msg: &apos;&#x6B64;&#x64CD;&#x4F5C;&#x5C06;&#x5220;&#x9664;&#x8BE5;&#x6761;&#x6570;&#x636E;&#xFF0C;&#x662F;&#x5426;&#x7EE7;&#x7EED;&apos;,
           onOk: () =&gt; {
-            <span class="hljs-keyword">this</span>.$dialog.toast({
-              msg: <span class="hljs-string">&apos;&#x5220;&#x9664;&#x6210;&#x529F;&apos;</span>
+            this.$dialog.toast({
+              msg: &apos;&#x5220;&#x9664;&#x6210;&#x529F;&apos;
             });
           },
           cancel: () =&gt; {
-            <span class="hljs-keyword">this</span>.$dialog.toast({
-              msg: <span class="hljs-string">&apos;&#x53D6;&#x6D88;&#x5220;&#x9664;&apos;</span>
+            this.$dialog.toast({
+              msg: &apos;&#x53D6;&#x6D88;&#x5220;&#x9664;&apos;
             });
           }
         });
       }
     }
   };
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
-  <span class="hljs-selector-class">.flex</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">display</span>: flex;
-    <span class="hljs-attribute">flex-direction</span>: column;
-    <span class="hljs-attribute">justify-content</span>: space-between;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+&lt;/script&gt;
+&lt;style scoped&gt;
+  .flex {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 
-  <span class="hljs-selector-class">.flex</span> <span class="hljs-selector-class">.zx-button</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+  .flex .zx-button {
+    margin-bottom: 10px;
   }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+&lt;/style&gt;
 </code></pre>
-
                                 
                                 </section>
                             
@@ -419,7 +418,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"dialog","level":"1.7","depth":1,"next":{"title":"popup","level":"1.8","depth":1,"path":"popup/README.md","ref":"popup/README.md","articles":[]},"previous":{"title":"checkbox","level":"1.6","depth":1,"path":"checkbox/README.md","ref":"checkbox/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dialog/README.md","mtime":"2018-05-09T06:45:07.683Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:45:13.861Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"dialog","level":"1.7","depth":1,"next":{"title":"popup","level":"1.8","depth":1,"path":"popup/README.md","ref":"popup/README.md","articles":[]},"previous":{"title":"checkbox","level":"1.6","depth":1,"path":"checkbox/README.md","ref":"checkbox/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dialog/README.md","mtime":"2018-05-09T06:11:51.490Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:27:29.371Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

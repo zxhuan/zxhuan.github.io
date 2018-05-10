@@ -291,37 +291,38 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="cell">cell</h1>
-<pre><code>&lt;template&gt;
-  &lt;div class=&quot;cell&quot;&gt;
-    &lt;zx-cell-group title=&quot;&#x6709;&#x6807;&#x9898;&quot;&gt;
-      &lt;zx-cell-item border&gt;
-        &lt;span name=&apos;left&apos;&gt;&#x5DE6;&#x8FB9;&lt;/span&gt;
-        &lt;span name=&apos;right&apos;&gt;&#x53F3;&#x8FB9;&lt;/span&gt;
-      &lt;/zx-cell-item&gt;
-      &lt;zx-cell-item border arrow type=&apos;label&apos;&gt;
-        &lt;span name=&apos;left&apos;&gt;&#x5DE6;&#x8FB9;&lt;/span&gt;
-        &lt;span name=&apos;right&apos;&gt;type:label&lt;/span&gt;
-      &lt;/zx-cell-item&gt;
-      &lt;zx-cell-item border arrow&gt;
-        &lt;span name=&apos;left&apos;&gt;&#x5DE6;&#x8FB9;&lt;/span&gt;
-        &lt;span name=&apos;right&apos;&gt;type:defalut&lt;/span&gt;
-      &lt;/zx-cell-item&gt;
-      &lt;zx-cell-item border arrow type=&apos;link&apos; href=&apos;/&apos;&gt;
-        &lt;span name=&apos;left&apos;&gt;&#x94FE;&#x63A5;&lt;/span&gt;
-        &lt;span name=&apos;right&apos;&gt;type:link&lt;/span&gt;
-      &lt;/zx-cell-item&gt;
-    &lt;/zx-cell-group&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
-&lt;script&gt;
-  export default {
-    name: &apos;cell&apos;,
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cell&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">zx-cell-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x6709;&#x6807;&#x9898;&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">zx-cell-item</span> <span class="hljs-attr">border</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;left&apos;</span>&gt;</span>&#x5DE6;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;right&apos;</span>&gt;</span>&#x53F3;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-cell-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">zx-cell-item</span> <span class="hljs-attr">border</span> <span class="hljs-attr">arrow</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;label&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;left&apos;</span>&gt;</span>&#x5DE6;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;right&apos;</span>&gt;</span>type:label<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-cell-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">zx-cell-item</span> <span class="hljs-attr">border</span> <span class="hljs-attr">arrow</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;left&apos;</span>&gt;</span>&#x5DE6;&#x8FB9;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;right&apos;</span>&gt;</span>type:defalut<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-cell-item</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">zx-cell-item</span> <span class="hljs-attr">border</span> <span class="hljs-attr">arrow</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;link&apos;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;/&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;left&apos;</span>&gt;</span>&#x94FE;&#x63A5;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&apos;right&apos;</span>&gt;</span>type:link<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-cell-item</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-cell-group</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    name: <span class="hljs-string">&apos;cell&apos;</span>,
     data() {
-      return {};
+      <span class="hljs-keyword">return</span> {};
     }
   };
-&lt;/script&gt;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
+
                                 
                                 </section>
                             
@@ -364,7 +365,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"cell","level":"1.5","depth":1,"next":{"title":"checkbox","level":"1.6","depth":1,"path":"checkbox/README.md","ref":"checkbox/README.md","articles":[]},"previous":{"title":"input","level":"1.4","depth":1,"path":"input/README.md","ref":"input/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cell/README.md","mtime":"2018-05-09T06:11:24.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:27:29.371Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"cell","level":"1.5","depth":1,"next":{"title":"checkbox","level":"1.6","depth":1,"path":"checkbox/README.md","ref":"checkbox/README.md","articles":[]},"previous":{"title":"input","level":"1.4","depth":1,"path":"input/README.md","ref":"input/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cell/README.md","mtime":"2018-05-09T06:43:46.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:45:13.861Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

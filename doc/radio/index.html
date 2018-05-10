@@ -291,81 +291,80 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="radio">radio</h1>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;radio&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;radio&#x9009;&#x9879;&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;label-text&quot;</span>&gt;</span>&#x5F53;&#x524D;&#x9009;&#x4E2D;&#x7684;&#x503C;:{{values}}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-group</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;values&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;values&quot;</span> <span class="hljs-attr">:rules</span>=<span class="hljs-string">&quot;rules.radio&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value1&quot;</span>&gt;</span>value1<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value2&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>value2<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value3&quot;</span>&gt;</span>value3<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value4&quot;</span>&gt;</span>value4<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;value5&quot;</span>&gt;</span>value5<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-button</span> @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;submitFn&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;primary&quot;</span>&gt;</span>&#x63D0;&#x4EA4;<span class="hljs-tag">&lt;/<span class="hljs-name">zx-button</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">zx-form-group</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;radio&#x9009;&#x9879;&quot;</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;label-text&quot;</span>&gt;</span>&#x5F53;&#x524D;&#x9009;&#x4E2D;&#x7684;&#x503C;:{{values1}}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-group</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">&quot;values1&quot;</span> <span class="hljs-attr">flex</span> @<span class="hljs-attr">change</span>=<span class="hljs-string">&quot;changeValue(values1)&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x9009;&#x9879;1&quot;</span>&gt;</span>&#x9009;&#x9879;1<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x9009;&#x9879;2&quot;</span>&gt;</span>&#x9009;&#x9879;2<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x9009;&#x9879;3&quot;</span>&gt;</span>&#x9009;&#x9879;3<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x9009;&#x9879;4&quot;</span>&gt;</span>&#x9009;&#x9879;4<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x9009;&#x9879;5&quot;</span>&gt;</span>&#x9009;&#x9879;5<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">zx-radio-item</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x9009;&#x9879;6&quot;</span>&gt;</span>&#x9009;&#x9879;6<span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-item</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">zx-radio-group</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">zx-form-group</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;radio&quot;&gt;
+    &lt;zx-form-group title=&quot;radio&#x9009;&#x9879;&quot;&gt;
+      &lt;span slot=&quot;label-text&quot;&gt;&#x5F53;&#x524D;&#x9009;&#x4E2D;&#x7684;&#x503C;:{{values}}&lt;/span&gt;
+      &lt;zx-radio-group v-model=&quot;values&quot; ref=&quot;values&quot; :rules=&quot;rules.radio&quot;&gt;
+        &lt;zx-radio-item value=&quot;value1&quot;&gt;value1&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;value2&quot; disabled&gt;value2&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;value3&quot;&gt;value3&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;value4&quot;&gt;value4&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;value5&quot;&gt;value5&lt;/zx-radio-item&gt;
+      &lt;/zx-radio-group&gt;
+    &lt;/zx-form-group&gt;
+    &lt;div class=&quot;flex&quot;&gt;
+      &lt;zx-button @click=&quot;submitFn&quot; type=&quot;primary&quot;&gt;&#x63D0;&#x4EA4;&lt;/zx-button&gt;
+    &lt;/div&gt;
+    &lt;zx-form-group title=&quot;radio&#x9009;&#x9879;&quot;&gt;
+      &lt;span slot=&quot;label-text&quot;&gt;&#x5F53;&#x524D;&#x9009;&#x4E2D;&#x7684;&#x503C;:{{values1}}&lt;/span&gt;
+      &lt;zx-radio-group v-model=&quot;values1&quot; flex @change=&quot;changeValue(values1)&quot;&gt;
+        &lt;zx-radio-item value=&quot;&#x9009;&#x9879;1&quot;&gt;&#x9009;&#x9879;1&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;&#x9009;&#x9879;2&quot;&gt;&#x9009;&#x9879;2&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;&#x9009;&#x9879;3&quot;&gt;&#x9009;&#x9879;3&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;&#x9009;&#x9879;4&quot;&gt;&#x9009;&#x9879;4&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;&#x9009;&#x9879;5&quot;&gt;&#x9009;&#x9879;5&lt;/zx-radio-item&gt;
+        &lt;zx-radio-item value=&quot;&#x9009;&#x9879;6&quot;&gt;&#x9009;&#x9879;6&lt;/zx-radio-item&gt;
+      &lt;/zx-radio-group&gt;
+    &lt;/zx-form-group&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
     data() {
-      <span class="hljs-keyword">return</span> {
-        values: <span class="hljs-string">&apos;&apos;</span>,
-        values1: <span class="hljs-string">&apos;&#x9009;&#x9879;1&apos;</span>,
+      return {
+        values: &apos;&apos;,
+        values1: &apos;&#x9009;&#x9879;1&apos;,
         rules: {
-          radio: { required: <span class="hljs-literal">true</span>, msg: <span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x4E2D;&#x4E00;&#x4E2A;&#x503C;&apos;</span> }
+          radio: { required: true, msg: &apos;&#x8BF7;&#x9009;&#x4E2D;&#x4E00;&#x4E2A;&#x503C;&apos; }
         }
       };
     },
     methods: {
       changeValue(value) {
-        <span class="hljs-built_in">console</span>.log(value);
+        console.log(value);
       },
-      <span class="hljs-comment">// &#x4EE3;&#x7801;&#x63D0;&#x4EA4;</span>
+      // &#x4EE3;&#x7801;&#x63D0;&#x4EA4;
       submitFn() {
-        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.$refs[<span class="hljs-string">&apos;values&apos;</span>].valid) {
-          <span class="hljs-keyword">this</span>.$dialog.toast({
-            msg: <span class="hljs-keyword">this</span>.$refs[<span class="hljs-string">&apos;values&apos;</span>].msg,
-            position: <span class="hljs-string">&apos;top&apos;</span>
+        if (!this.$refs[&apos;values&apos;].valid) {
+          this.$dialog.toast({
+            msg: this.$refs[&apos;values&apos;].msg,
+            position: &apos;top&apos;
           });
-          <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+          return false;
         }
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.values);
+        console.log(this.values);
       },
       getValue(val) {
-        <span class="hljs-built_in">console</span>.log(val);
+        console.log(val);
       }
     }
   };
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">scoped</span>&gt;</span><span class="css">
-  <span class="hljs-selector-class">.flex</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">display</span>: flex;
-    <span class="hljs-attribute">flex-direction</span>: column;
-    <span class="hljs-attribute">justify-content</span>: space-between;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+&lt;/script&gt;
+&lt;style scoped&gt;
+  .flex {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
   }
 
-  <span class="hljs-selector-class">.flex</span> <span class="hljs-selector-class">.zx-button</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+  .flex .zx-button {
+    margin-bottom: 10px;
   }
-</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+&lt;/style&gt;
 </code></pre>
-
                                 
                                 </section>
                             
@@ -408,7 +407,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"radio","level":"1.9","depth":1,"next":{"title":"select","level":"1.10","depth":1,"path":"select/README.md","ref":"select/README.md","articles":[]},"previous":{"title":"popup","level":"1.8","depth":1,"path":"popup/README.md","ref":"popup/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"radio/README.md","mtime":"2018-05-09T06:44:03.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:45:13.861Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"radio","level":"1.9","depth":1,"next":{"title":"select","level":"1.10","depth":1,"path":"select/README.md","ref":"select/README.md","articles":[]},"previous":{"title":"popup","level":"1.8","depth":1,"path":"popup/README.md","ref":"popup/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"radio/README.md","mtime":"2018-05-09T06:12:34.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-09T06:27:29.371Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
